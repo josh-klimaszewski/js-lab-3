@@ -52,8 +52,13 @@ var character = {
       console.log(character.name + " won!");
     }
   }
-if (prompt("Do you want to play?") === "yes") {
-  character.name = prompt("What is your name?");
-  combat();
+
+function startGame() {
+  if (prompt("Do you want to play?") === "yes") {
+    character.name = prompt("What is your name?");
+    combat();
+  }
 }
 
+
+startGame();
